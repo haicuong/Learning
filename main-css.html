@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            body {background-color: powderblue;}
-            h1 {color: blue;}
-            p {color: red;}
-        </style>
+        <title>This is a css main page</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>This is a header 1</h1>
+        <h1 id="H1">This is a header 1</h1>
         <p>This is a paragraph</p>
+        
+        <hr>
+        <h1>This is Link section</h1>
+        <p><img src="images/addiction.jpeg" alt="Addiction" style="float: left; width: 90px;">This image will float to the left of the text</p><br>
+        <p><img src="images/Praise Him Easter Bunny GIF by Robert E Blackmon.gif" alt="Man dancing" style="float: right; width: 90px;">This image will float to the right of the text</p><br>
+        <img src="images/Praise Him Easter Bunny GIF by Robert E Blackmon.gif" alt="A man wearing rabbit cosplay dancing" style="height: 300px; width: auto;"><br>
+        <button onclick="document.location='images/addiction.jpeg'">A link button? go to addiction image</button><br>
+        <a href="https://www.youtube.com" target="_self" title="Go visit youtube site!">Visit Youtube! -- This is absolute link</a><br>
+        <a href="main-practice.html" target="_blank">Visit The Practice! -- This is relative link</a><br>
+        <a href="main.html" target="_blank"><img width="100" title="Click to go to main!" src="https://tiki.vn/blog/wp-content/uploads/2023/09/internet-la-gi.jpg" alt="A Internet Represent Image"></a><br>
+        <a href="mailto:drseft123@gmail.com">Send email to another Hai Cuong's mail</a><br>
+        <a href="#H1">Jump to header 1!</a><br>
+        <a href="main.html#quotation" target="_blank">Jump to quotation chapter!</a>
     </body>
 </html>

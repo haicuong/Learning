@@ -1,0 +1,38 @@
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 200%;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+}
+p {
+    color: green;
+    font-family: courier;
+    font-size: 150%;
+    text-align: center;
+}
+a:link, a:visited {
+    color: black;
+    background-color: aqua;
+    text-decoration: none;
+    /* padding: 15px 25px;
+    display: inline-block; */
+}
+a:hover, a:active {
+    color: red;
+    background-color: yellow;
+    text-decoration: underline;
+}
+a:active {
+    color: blueviolet;
+    background-color: gainsboro;
+}
+img {
+    width: 800px;
+    height: auto;
+}
