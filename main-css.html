@@ -7,6 +7,27 @@
     <body>
         <h1 id="H1">This is a header 1</h1>
         <p>This is a paragraph</p>
+
+        <hr>
+        <h1>This is map image section</h1>
+        <p>The Addiction Guidance</p>
+        <img src="images/addiction.jpeg" style="width: auto;" alt="" usemap="#Addiction seperate">
+
+        <map name="Addiction seperate">
+            <area onclick="testFunction()" shape="rect" target="_blank" coords="0, 0, 207, 602" href="https://vi.wiktionary.org/wiki/normal" alt="">
+            <area shape="rect" target="_blank" coords="207, 0, 414, 602" href="https://vi.wiktionary.org/wiki/drugged" alt="">
+            <area shape="rect" target="_blank" coords="414, 0, 621, 602" href="https://vi.wiktionary.org/wiki/sad" alt="">
+            <area shape="rect" target="_blank" coords="621, 0, 828, 602" href="https://en.wikipedia.org/wiki/Depression_(mood)" alt="">
+        </map>
+        <map name="Default addiction">
+            <area target="_blank" shape="default" coords="" href="main-practice.html" alt="">
+        </map>
+
+        <script>
+            function testFunction(){
+                alert("You clicked the normal!")
+            }
+        </script>
         
         <hr>
         <h1>This is Link section</h1>

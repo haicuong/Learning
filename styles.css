@@ -1,7 +1,16 @@
 body {
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: 100% 100%;
     background-color: powderblue;
+    background-image: url('images/mayback-blackbackground.jpg');
+    color: white;
 }
 h1 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hopetoun_falls.jpg/1280px-Hopetoun_falls.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
     color: blue;
     font-family: verdana;
     font-size: 200%;
@@ -10,18 +19,112 @@ h1 {
     padding: 10px;
     margin: 20px;
 }
+caption {
+    background-color: aqua;
+    border: 2px solid yellow;
+    border-style: dotted;
+    border-radius: 10px;
+    font-weight: bold;
+}
+caption.default {
+
+    background-color: white;
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-weight: bold;
+    border-radius: 0px;
+    text-align: center;
+}
+table.default {
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    border-collapse: collapse;
+    margin: 70px;
+    margin-left: 10%;
+}
+th.default {
+    all:unset;
+    text-align: right;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+}
+table, th, td {
+    color: black;
+    border: 2px solid violet;
+    border-color: yellow;
+    border-style: dashed;
+    /* border-collapse: collapse; */
+    border-radius: 10px;
+    border-spacing: 10px;
+    margin: 70px;
+    margin-left: 10%;
+    /* margin-bottom: 70px; */
+}
+td {
+    text-align: center;
+    /* background-color: aqua; */
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+th {
+    color: white;
+    background-color: blue;
+}
+/* tr {
+    background-color: aqua;
+} */
+/* tr:nth-child(odd):hover {
+background-color: rgba(18, 188, 255, 0.5);
+} */
+/* td:nth-child(odd){
+    background-color: rgba(89, 81, 246, 0.7);
+} */
+tr:hover {
+    background-color: aqua;
+}
+td:hover {
+    background-color: blueviolet;
+}
 p {
-    color: green;
+    color: white;
     font-family: courier;
     font-size: 150%;
+    /* text-align: center; */
+}
+li, dl {
+    color: white;
+}
+ul {
+    list-style-type: square;
+}
+ul.hotbar {
+    list-style-type: none;
+    margin: 10px;
+    overflow: hidden;
+}
+li.hotbar:hover {
+    background-color: #333333;
+}
+li.hotbar {
+    text-decoration: none;
+    background-color: #555555;
+    display: block;
     text-align: center;
+    padding: 10px;
+    float: left;
 }
 a:link, a:visited {
     color: black;
     background-color: aqua;
     text-decoration: none;
     /* padding: 15px 25px;
-    display: inline-block; */
+    display: block; */
+}
+a:link {
+    text-decoration: underline;
 }
 a:hover, a:active {
     color: red;
