@@ -5,13 +5,14 @@ body {
     background-color: powderblue;
     background-image: url('images/mayback-blackbackground.jpg');
     color: white;
+    font-family: courier;
 }
 h1 {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hopetoun_falls.jpg/1280px-Hopetoun_falls.jpg');
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
-    color: blue;
+    color: rgb(54, 245, 54);
     font-family: verdana;
     font-size: 200%;
     text-align: center;
@@ -19,6 +20,7 @@ h1 {
     padding: 10px;
     margin: 20px;
 }
+
 caption {
     background-color: aqua;
     border: 2px solid yellow;
@@ -82,6 +84,31 @@ background-color: rgba(18, 188, 255, 0.5);
 /* td:nth-child(odd){
     background-color: rgba(89, 81, 246, 0.7);
 } */
+div {
+    overflow: auto;
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: inline;
+    grid-template-columns: 33% 33% 33%;
+}
+div.grid {
+    display: grid;
+    grid-template-columns: 100% 100% 100%;
+}
+#myDiv {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: red;
+    border: 3px solid white;
+    width: 20%;
+    margin: auto;
+    padding: 20px;
+    display: block;
+}
 tr:hover {
     background-color: aqua;
 }
@@ -89,8 +116,6 @@ td:hover {
     background-color: blueviolet;
 }
 p {
-    color: white;
-    font-family: courier;
     font-size: 150%;
     /* text-align: center; */
 }
