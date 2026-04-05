@@ -18,7 +18,12 @@
 
         <script>
         function displayResult() {
-        document.getElementById("myDiv").innerHTML = "Have a nice day!";
+            var div = document.getElementById("myDiv");
+            if(div.innerHTML == "Have a nice day!"){
+                div.innerHTML = "This is the text!"
+            } else {
+                div.innerHTML = "Have a nice day!"
+            }
         }
         </script>
 
