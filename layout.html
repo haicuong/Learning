@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1">
+        <title>Learning layout</title>
+        <link rel="stylesheet" href="styles-layout.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 style="font-size: 30px;">Nguyễn Hải Cường</h1>
+                <p>Future Web Developer</p>
+            </header>
+            <nav>
+                <ul class="nav">
+                    <a href=""><li>Trang chủ</li></a>
+                    <a href="#AboutMe"><li>Về tôi</li></a>
+                    <a href="#Projects"><li>Dự án</li></a>
+                    <a href="#Contacts"><li>Liên hệ</li></a>  
+                </ul>
+            </nav>
+            <main>
+                <aside>
+                <h2>Bạn có biết ?</h2>
+                <h3>Toàn bộ Internet thực chất chỉ được xây dựng từ những hình chữ nhật.</h3>
+                <p>
+                    Dù bạn thấy một nút bấm hình tròn, một biểu tượng ngôi sao, hay một tấm ảnh hình trái tim, thì trong "mắt" của trình duyệt, chúng đều là những cái hộp hình chữ nhật (gọi là Box Model).
+                    <br>
+                    Các hình dáng phức tạp khác chỉ là "ảo ảnh" do CSS tạo ra bằng cách bo góc, cắt tỉa hoặc che đi các cạnh của cái hộp đó. Nếu bạn có thể bóc tách lớp vỏ bề ngoài, bạn sẽ thấy mọi trang web đều giống như một đống thùng carton xếp chồng lên nhau.
+                </p>
+                </aside>
+                <section id="AboutMe" class="designOne">
+                    <h2>Về tôi</h2>
+                    <p>
+                        Là một học sinh cấp sắp tốt nghiệp để vào đại học, 
+                        nhưng tôi mong muốn được làm intern fullstack web dev ngay từ năm nhất.<br>
+                        
+                        Chuyển từ game dev qua web dev.
+                    </p>
+                </section>
+                <section  id="Projects" class="designTwo">
+                    <h2>Dự án</h2>
+                    <h3>Game projects</h3>
+                    <p>Nổi bật nhất có thể kể đến DinnoRunning: <a href="https://www.mediafire.com/file/b8gjgl8pttvxj2w/DinoRunning_0.0.7.rar/file" target="_blank">DOWNLOAD</a></p>
+                    <br>
+                    <h3>Web dev</h3>
+                    <p>Comming soon...</p>
+                </section>
+            </main>
+            <footer>
+                <h2 id="Contacts">Liên hệ</h2>
+                <address>
+                    Mr. Cuong <br>
+                    Gmail: <a href="mailto:haicuongqwerty@gmail.com">haicuongqwerty@gmail.com</a><br>
+                    Phone: <a href="tel:+8493732215">093732215</a>
+                </address>
+            </footer>
+        </div>
+    </body>
+</html>
