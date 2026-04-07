@@ -7,6 +7,11 @@ body {
     color: white;
     font-family: courier;
 }
+/* @media screen and (max-width: 2000px) {
+    img {
+        width: 100%;
+    }
+} */
 h1 {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hopetoun_falls.jpg/1280px-Hopetoun_falls.jpg');
     background-repeat: no-repeat; 
