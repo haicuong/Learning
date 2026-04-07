@@ -1,311 +1,337 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="Learning HTML, Cuongdz">
-        <meta name="description" content="Cuongdz's learning space">
-        <meta name="author" content="Hai Cuong">
-        <!-- <meta http-equiv="refresh" content="5"> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- This will broke the web
-        <base href="/images/"> -->
-        <title>This is a page</title>
-        <link rel="stylesheet" href="styles.css">
-    <head>
-    <body>
-        <h1 style="font-size:80px">This is a bigger header 1</h1>
-        <h2>This is a header 2</h2>
-        
-        <hr>
-        <h1>Semantics section</h1>
-        <figure>
-            <img src="images/mayback.jpg" style="width: 40%; height: auto;" alt="">
-            <figcaption style="font-size: 2vw;">A Nice MAYBACK.</figcaption>
-        </figure>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Learning HTML, Cuongdz">
+    <meta name="description" content="Cuongdz's learning space">
+    <meta name="author" content="Hai Cuong">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This will broke the web
+    <base href="/images/"> -->
+    <title>This is a page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="JavaScript.js"></script>
+  <head>
+  <body>
+    <h1 style="font-size:80px">This is a bigger header 1</h1>
+    <h2>This is a header 2</h2>
 
-        <p>This is a <mark>marked</mark> sentence</p>
+    <hr>
+    <h1>Form section</h1>
+    <form action="" target="_blank" method="get" autocomplete="off">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" required><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" required><br>
+      <input type="submit" name="Submit" style="margin-top: 10px;"> <br>
+      
+      <p style="margin-bottom: 10px;">Which is your favorite pet?</p>
+      <input type="radio" id="cat" name="fav_pet" value="Cat">
+      <label for="cat">Cat</label><br>
+      <input type="radio" id="dog" name="fav_pet" value="Dog">
+      <label for="dog">Dog</label><br>
+      <input type="radio" id="rabbit" name="fav_pet" value="Rabbit">
+      <label for="rabbit">Rabbit</label><br>
+      
+      <p style="margin-bottom: 10px;">You want more than one?</p>
+      <input type="checkbox" id="catcb" name="fav_pet" value="Cat">
+      <label for="catcb">Cat</label><br>
+      <input type="checkbox" id="dogcb" name="fav_pet" value="Dog">
+      <label for="dogcb">Dog</label><br>
+      <input type="checkbox" id="rabbitcb" name="fav_pet" value="Rabbit">
+      <label for="rabbitcb">Rabbit</label><br>
+      <input type="button" value="Just a button" name="Button" style="margin-top: 10px;"><br>
+    </form>
+    <br>
+    <form name="SensitiveForm" action="" target="_self" method="post" autocomplete="off">
+      <label for="sensitiveData">A sensitive data:</label><br>
+      <input type="text" id="sensitiveData" name="SensitiveData" required><br>
+      <input type="submit" name="Submit" style="margin-top: 10px;"> <br>
+    </form>
 
-        <p>My birthday is on <time datetime="2008-02-27 15:00">27/02/2008!</time></p>
+    <hr>
+    <h1>Entities section</h1>
+    <pre>
+      This is a entity number: &#60; or &lt;
+      This is non-breaking space: a&nbsp&nbsp;&nbsp;&nbsp;b;
+      This is ampersand: &amp;
+      This is double quotation mark: &quot;
+      This is single quotation mark: &apos;
+      This is cent: &cent;
+      This is pound: &pound;
+      Yen: &yen;
+      Euro: &euro;
+      Copyright: &copy;
+      Registered trademark: &reg;
+      Trademark: &trade;
+      O&#770;&#771;
+      Left Right Up Down: &larr; &rarr; &uarr; &darr; 
+      Bích&spades; Chuồn&clubs; Rô&diams; Bích&hearts;
+      ⛱ ⛴ ⛟ <!-- literally just copy the symbol bruh -->
+      😄 😍 💗
+    </pre>
+    
+    <hr>
+    <h1>Semantics section</h1>
+    <figure>
+      <img src="images/mayback.jpg" style="width: 40%; height: auto;" alt="">
+      <figcaption style="font-size: 2vw;">A Nice MAYBACK.</figcaption>
+    </figure>
 
-        <hr>
-        <h1>Computer code section</h1>
-        <pre>
-        <code>
-        This is a script: 
-        function myFunction() {
-            alert("Hello World!");
-        }
+    <p>This is a <mark>marked</mark> sentence</p>
 
-        This is tags:
-        &ltcode&gt, &ltheader&gt, &ltmain&gt,
+    <p>My birthday is on <time datetime="2008-02-27 15:00">27/02/2008!</time></p>
 
-        This is special character:
-        &amplt go to &lt
-        &ampgt go to &gt
-        &ampamp go to &amp
+    <hr>
+    <h1>Computer code section</h1>
+    <pre>
+    <code>
+    This is a script: 
+    function myFunction() {
+        alert("Hello World!");
+    }
 
-        This shortcut go to save process: <kbd>Ctrl + S</kbd>
-        </code>
-        Press this button:
-        <button onclick="alert('Hello World!')">PRESS!</button>
-        to receive alert:
-        <samp>Hello World!</samp>
+    This is tags:
+    &ltcode&gt, &ltheader&gt, &ltmain&gt,
 
-        The area of triangle is 1/2 x <var>b</var> x <var>h</var>
-        where <var>b</var> is the base and <var>h</var> is the height of the base.
-        <pre>
+    This is special character:
+    &amp;lt; go to &lt;
+    &amp;gt; go to &gt;
+    &amp;amp; go to &amp;
 
-        <hr>
-        <h1>Reponsive HTML section</h1>
-        <img src="images/Farm.jpg" style="width: 60%; height: auto;" alt="">
-        <p style="font-size: 2vw;">This text is 2 viewport width</p>
+    This shortcut go to save process: <kbd>Ctrl + S</kbd>
+    </code>
+    Press this button:
+    <button onclick="alert('Hello World!')">PRESS!</button>
+    to receive alert:
+    <samp>Hello World!</samp>
+
+    The area of triangle is 1/2 x <var>b</var> x <var>h</var>
+    where <var>b</var> is the base and <var>h</var> is the height of the base.
+    <pre>
+
+    <hr>
+    <h1>Reponsive HTML section</h1>
+    <img src="images/Farm.jpg" style="width: 60%; height: auto;" alt="">
+    <p style="font-size: 2vw;">This text is 2 viewport width</p>
 
 
-        <hr>
-        <h1>Layout section</h1>
-        <details>
-            <summary>This is a detail</summary>
-            Yeah just a deltail <br>
-            Also this
-        </details>
+    <hr>
+    <h1>Layout section</h1>
+    <details>
+        <summary>This is a detail</summary>
+        Yeah just a deltail <br>
+        Also this
+    </details>
 
-        <hr>
-        <h1>Javascript section</h1>
-        <p id="demo" style="color: red;">This is a demo</p>
-        <button type="button" onclick="changeDemo()">Change demo text!</button>
+    <hr>
+    <h1>Javascript section</h1>
+    <p id="demo" style="color: rgb(173, 166, 166);">This is a demo</p>
+    <button type="button" onclick="changeDemo()">Change demo text!</button>
 
-        <script>
-            function changeDemo(){
-                var demo = document.getElementById("demo");
-                var noMoreDemo = document.getElementById("noMoreDemo");
-                if(demo) {
-                    if(demo.innerHTML == "Hello JavaScript!"){
-                        demo.innerHTML = "This is a demo";        
-                        demo.style.color = "red"; 
-                        demo.style.fontWeight = "none";
-                        demo.id = "noMoreDemo";       
-                    } else {
-                        demo.innerHTML ="Hello JavaScript!";
-                        demo.style.color ="lightgreen";
-                        demo.style.fontWeight = "none";
-                    }
-                } 
-                else if (noMoreDemo){
-                    if(noMoreDemo.innerHTML == "This is a demo"){
-                        noMoreDemo.innerHTML = "Hello JavaScript with no demo!";        
-                        noMoreDemo.style.color = "lightgreen"; 
-                        noMoreDemo.style.fontWeight = "bold"; 
-                    } else {
-                        noMoreDemo.innerHTML ="This is not a demo!";
-                        noMoreDemo.style.color ="red";
-                        noMoreDemo.style.fontWeight = "bold";
-                        noMoreDemo.id = "demo";       
-                    }
-                }
-            }
-        </script>
-        <noscript>Your browser does not support JavaScript</noscript>
+    <noscript>Your browser does not support JavaScript</noscript>
 
-        <hr>
-        <h1>Iframe section</h1>
-        <iframe name="Iframe1" src="main-css.html" title="Main css"></iframe>
-        <br>
-        <a href="main-gallery.html" style="display: block; margin: auto; width: 200px;text-align: center;border-radius: 10px;font-weight: bold;" target="Iframe1">
-            Click to go to Gellery</a>
+    <hr>
+    <h1>Iframe section</h1>
+    <iframe name="Iframe1" src="main-css.html" title="Main css"></iframe>
+    <br>
+    <a href="main-gallery.html" style="display: block; margin: auto; width: 200px;text-align: center;border-radius: 10px;font-weight: bold;" target="Iframe1">
+        Click to go to Gellery</a>
 
-        <hr>
-        <h1>This is button section</h1>
-        <button type="button">Click YOU!</button><br>
+    <hr>
+    <h1>This is button section</h1>
+    <button type="button">Click YOU!</button><br>
+    <button type="submit">Click to submit</button><br>
+    <button type="reset">Click to reset fields</button><br>
+    <button onclick="alert('Hello!')">Click to alert!</button>
+    <form action="styles.css">
+        Your name: <input type="text" name="name">
         <button type="submit">Click to submit</button><br>
         <button type="reset">Click to reset fields</button><br>
-        <button onclick="alert('Hello!')">Click to alert!</button>
-        <form action="styles.css">
-            Your name: <input type="text" name="name">
-            <button type="submit">Click to submit</button><br>
-            <button type="reset">Click to reset fields</button><br>
-        </form>
+    </form>
 
-        <hr>
-        <h1 id="divSection">This is id section</h1>
-        <div id="myDiv">
-            This is the text!
-        </div>
+    <hr>
+    <h1 id="divSection">This is id section</h1>
+    <div id="myDiv">
+        This is the text!
+    </div>
 
-        <button onclick="displayResult()">Change text</button>
+    <button onclick="displayResult()">Change text</button>
 
-        <script>
-        function displayResult() {
-            var div = document.getElementById("myDiv");
-            if(div.innerHTML == "Have a nice day!"){
-                div.innerHTML = "This is the text!"
-            } else {
-                div.innerHTML = "Have a nice day!"
-            }
+    <script>
+    function displayResult() {
+        var div = document.getElementById("myDiv");
+        if(div.innerHTML == "Have a nice day!"){
+            div.innerHTML = "This is the text!"
+        } else {
+            div.innerHTML = "Have a nice day!"
         }
-        </script>
+    }
+    </script>
 
-        <hr>
-        <div style="all: unset; color: black; display: flex">
-            <div style="background-color: #aaaaaa;">
-            <h1>This is block-level element section</h1>
-                This is a block element! <br>
-                <span>This is inline element!</span>
-                This is another line!
-                <p>I have a <span style="color: white; background-color: black;"><big>BIG DUCK</big></span></p>
-            </div>
-            <div style="font-family: arial;background-color: wheat;">
-                <h2>HaNoi</h2>
-                <p>Hanoi is the capital of VietNam</p>
-                <p>Hanoi has over 8.8 milions inhabitants</p>
-            </div>
-            <div style="font-family: arial;background-color: aquamarine;">
-                <h2>HoChiMinh city</h2>
-                <p>HoChiMinh is the a big city in VietNam</p>
-                <p>HoChiMinh has over 10 milions inhabitants</p>
-            </div>
+    <hr>
+    <div style="all: unset; color: black; display: flex">
+        <div style="background-color: #aaaaaa;">
+        <h1>This is block-level element section</h1>
+            This is a block element! <br>
+            <span>This is inline element!</span>
+            This is another line!
+            <p>I have a <span style="color: white; background-color: black;"><big>BIG DUCK</big></span></p>
         </div>
-        <hr>
-        <h1>HTML List section</h1>
-        <ul>
-            <li>This list</li>
-            <li>are</li>
-            <li>unorder
-            <ol>
-                <li>This is</li>
-                <li>nested</li>
-                <li>list!</li>
-            </ol>
-            </li>
-        </ul>
-        <ol type="A" start="3">
-            <li>This list</li>
-            <li>are</li>
-            <li>order!</li>
-            <li>order!</li>
-            <li>order!</li>
-            <li>order!</li>
+        <div style="font-family: arial;background-color: wheat;">
+            <h2>HaNoi</h2>
+            <p>Hanoi is the capital of VietNam</p>
+            <p>Hanoi has over 8.8 milions inhabitants</p>
+        </div>
+        <div style="font-family: arial;background-color: aquamarine;">
+            <h2>HoChiMinh city</h2>
+            <p>HoChiMinh is the a big city in VietNam</p>
+            <p>HoChiMinh has over 10 milions inhabitants</p>
+        </div>
+    </div>
+    <hr>
+    <h1>HTML List section</h1>
+    <ul>
+        <li>This list</li>
+        <li>are</li>
+        <li>unorder
+        <ol>
+            <li>This is</li>
+            <li>nested</li>
+            <li>list!</li>
         </ol>
-        <dl>
-            <dt>This list</dt>
-            <dd>has description!</dd>
-            <dt>Milk</dt>
-            <dd>is white!</dd>
-        </dl>
-        <ul class="hotbar">
-            <li class="hotbar"><a target="_blank" href="main-css.html" style="all:unset; text-decoration: underline;">Home</a></li>
-            <li class="hotbar">News</li>
-            <li class="hotbar">Contacts</li>
-            <li class="hotbar">About</li>
-        </ul>
+        </li>
+    </ul>
+    <ol type="A" start="3">
+        <li>This list</li>
+        <li>are</li>
+        <li>order!</li>
+        <li>order!</li>
+        <li>order!</li>
+        <li>order!</li>
+    </ol>
+    <dl>
+        <dt>This list</dt>
+        <dd>has description!</dd>
+        <dt>Milk</dt>
+        <dd>is white!</dd>
+    </dl>
+    <ul class="hotbar">
+        <li class="hotbar"><a target="_blank" href="main-css.html" style="all:unset; text-decoration: underline;">Home</a></li>
+        <li class="hotbar">News</li>
+        <li class="hotbar">Contacts</li>
+        <li class="hotbar">About</li>
+    </ul>
 
-        <hr>
-        <h1>HTML tables section</h1>
-        <table style="border: none; width: 50%;">
-            <caption>Students information</caption>
-            <colgroup>
-                <col span="2" style="background-color: gray;">
-                <col span="2" style="background-color: white;">
-            </colgroup>
-            <tr style="height: 50px;">
-                <th colspan="2" style="width: auto;">Name and Sex</th>
-                <th>Age</th>
-            </tr>
-            <tr>
-                <td>Nguyen Hai Cuong</td>
-                <td>Male</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td><a target="_blank" href="https://vi.wikipedia.org/wiki/Ng%C6%B0%E1%BB%9Di_da_%C4%91en">Nguyen Phuc Hieu</a></td>
-                <td>Gay</td>
-                <td>17</td>
-            </tr>
-            <tr>
-                <td><a target="_blank" href="https://vi.wikipedia.org/wiki/B%E1%BB%99_x%C6%B0%C6%A1ng_ng%C6%B0%E1%BB%9Di">Doan Le Duy Anh</a></td>
-                <td>Skeleton</td>
-                <td>18</td>
-            </tr>
-            <tr>
-                <td>Vo Hoai Bao</td>
-                <td>Male</td>
-                <td>18</td>
-            </tr>
-        </table>
+    <hr>
+    <h1>HTML tables section</h1>
+    <table style="border: none; width: 50%;">
+        <caption>Students information</caption>
+        <colgroup>
+            <col span="2" style="background-color: gray;">
+            <col span="2" style="background-color: white;">
+        </colgroup>
+        <tr style="height: 50px;">
+            <th colspan="2" style="width: auto;">Name and Sex</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Nguyen Hai Cuong</td>
+            <td>Male</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td><a target="_blank" href="https://vi.wikipedia.org/wiki/Ng%C6%B0%E1%BB%9Di_da_%C4%91en">Nguyen Phuc Hieu</a></td>
+            <td>Gay</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td><a target="_blank" href="https://vi.wikipedia.org/wiki/B%E1%BB%99_x%C6%B0%C6%A1ng_ng%C6%B0%E1%BB%9Di">Doan Le Duy Anh</a></td>
+            <td>Skeleton</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Vo Hoai Bao</td>
+            <td>Male</td>
+            <td>18</td>
+        </tr>
+    </table>
 
-        <hr>
-        <h1>Color section</h1>
-            <p style="border:2px solid Tomato">This is a sentence with solid tomato-color border</p>
-            <p style="border:2px solid Violet">This is a sentence with solid violet-color border</p>
-            <p style="border:2px solid DodgerBlue">This is a sentence with solid DodgerBlue-color border</p>
-            <p style="background-color:rgb(255, 0, 0);">Background: red rpg</p>
-            <p style="background-color:rgb(0, 255, 0);">Background: green rpg</p>
-            <p style="background-color:rgb(0, 0, 255);">Background: blue rpg</p>
-            <p style="background-color:rgba(255, 0, 0, 0.5);">Background: half transparent red rpg</p>
-            <p style="background-color:#8b617f;">Background: #8b617f hex</p>
-            <p style="background-color:#397d3a;">Background: #397d3a hex</p>
-            <p style="background-color:#a5a5a5;">Background: #a5a5a5 hex</p>
-            <p style="background-color:#353535;">Background: #353535 hex</p>
-            <p style="background-color:hsla(150, 70%, 50%, 0.5);">Background: hsla(150, 70%, 50%, 0.5)</p>
-            <p style="background-color:hsl(300, 76%, 72%);">Background: hsl(300, 76%, 72%)</p>
+    <hr>
+    <h1>Color section</h1>
+        <p style="border:2px solid Tomato">This is a sentence with solid tomato-color border</p>
+        <p style="border:2px solid Violet">This is a sentence with solid violet-color border</p>
+        <p style="border:2px solid DodgerBlue">This is a sentence with solid DodgerBlue-color border</p>
+        <p style="background-color:rgb(255, 0, 0);">Background: red rpg</p>
+        <p style="background-color:rgb(0, 255, 0);">Background: green rpg</p>
+        <p style="background-color:rgb(0, 0, 255);">Background: blue rpg</p>
+        <p style="background-color:rgba(255, 0, 0, 0.5);">Background: half transparent red rpg</p>
+        <p style="background-color:#8b617f;">Background: #8b617f hex</p>
+        <p style="background-color:#397d3a;">Background: #397d3a hex</p>
+        <p style="background-color:#a5a5a5;">Background: #a5a5a5 hex</p>
+        <p style="background-color:#353535;">Background: #353535 hex</p>
+        <p style="background-color:hsla(150, 70%, 50%, 0.5);">Background: hsla(150, 70%, 50%, 0.5)</p>
+        <p style="background-color:hsl(300, 76%, 72%);">Background: hsl(300, 76%, 72%)</p>
 
-        <hr>
-        <h1 id="quotation">This is quotation and citation section</h1>
-            <p>This is a quote from Socrates:</p>
-                <blockquote cite="https://www.brainyquote.com/quotes/socrates_383380">I know that I am intelligent, because I know that I know nothing.</blockquote>
-            <p>Hai Cuong have once said: <q>If you die, you die</q></p>
-            <p><abbr title="Vo Truong Toan">VTT</abbr> was founded in 1999</p>
-            <address>
-                Written by Hai Cuong.<br>
-                Visit us at:<br>
-                Phone contact:<br>
-                Tan Thoi Hiep, HCM city.<br>
-                VietNam<br>
-            </address>
-            <p><cite>Avengers: Endgame</cite> by Marvel. Released in 2019</p>
-            <bdo dir="rtl">This sentence will be written right to left</bdo>
-        
-        <hr>
-            <h1>This is comment section</h1>
-            <!-- This is one line comment -->
-            <!-- This is multi-line comment,
-                another line! -->
-            <p> Of course, it has nothing here!<!-- Inline comment --> Go check source code</p>
+    <hr>
+    <h1 id="quotation">This is quotation and citation section</h1>
+        <p>This is a quote from Socrates:</p>
+            <blockquote cite="https://www.brainyquote.com/quotes/socrates_383380">I know that I am intelligent, because I know that I know nothing.</blockquote>
+        <p>Hai Cuong have once said: <q>If you die, you die</q></p>
+        <p><abbr title="Vo Truong Toan">VTT</abbr> was founded in 1999</p>
+        <address>
+            Written by Hai Cuong.<br>
+            Visit us at:<br>
+            Phone contact:<br>
+            Tan Thoi Hiep, HCM city.<br>
+            VietNam<br>
+        </address>
+        <p><cite>Avengers: Endgame</cite> by Marvel. Released in 2019</p>
+        <bdo dir="rtl">This sentence will be written right to left</bdo>
+    
+    <hr>
+        <h1>This is comment section</h1>
+        <!-- This is one line comment -->
+        <!-- This is multi-line comment,
+            another line! -->
+        <p> Of course, it has nothing here!<!-- Inline comment --> Go check source code</p>
 
-        <hr>
-        <h1>This is formatting section</h1>
-            <p>
-            <b>This text is bold</b><br>
-            <i>This is italic text</i><br>
-            <small>This text is small</small><br>
-            <p style="background-color:aqua">This is a <mark>mark</mark> text</p>
-            <p style="color:red">This text color is <del style="color:aqua">aqua</del> <ins>red</ins></p>
-            H<sub>2</sub>O is water
-            2<sup>3</sup>=8
-            </p>
+    <hr>
+    <h1>This is formatting section</h1>
+        <p>
+        <b>This text is bold</b><br>
+        <i>This is italic text</i><br>
+        <small>This text is small</small><br>
+        <p style="background-color:aqua">This is a <mark>mark</mark> text</p>
+        <p style="color:red">This text color is <del style="color:aqua">aqua</del> <ins>red</ins></p>
+        H<sub>2</sub>O is water
+        2<sup>3</sup>=8
+        </p>
 
-        <hr>
-            <pre style="font-size:20px">
-            This is a poem
-            That mean nothing.
-            Rose are red, sky is blue,
-            Why you so stunning?
+    <hr>
+        <pre style="font-size:20px">
+        This is a poem
+        That mean nothing.
+        Rose are red, sky is blue,
+        Why you so stunning?
 
-            This is just     a space test
-            </pre>
+        This is just     a space test
+        </pre>
 
-        <hr>
-            <p>This is a paragraph,<br>this line belongs to the line above</p>
+    <hr>
+        <p>This is a paragraph,<br>this line belongs to the line above</p>
 
-        <hr>
-        <h1>This is a style section</h1>
-            <p style="background-color:aqua; color:tomato; font-family:verdana; font-size:250%; text-align:center">This is a bigger center-aligned tomato-color paragraph with aqua background and verdana font</p>
-            <p style="background-color:tomato; color:aqua; font:courier; font-size:200%; text-align: right">This is a right-aligned aqua paragraph with tomato-color background and courier font</p>
+    <hr>
+    <h1>This is a style section</h1>
+        <p style="background-color:aqua; color:tomato; font-family:verdana; font-size:150%; text-align:center">This is a bigger center-aligned tomato-color paragraph with aqua background and verdana font</p>
+        <p style="background-color:tomato; color:aqua; font:courier; font-size:100%; text-align: right">This is a right-aligned aqua paragraph with tomato-color background and courier font</p>
 
-        <hr>
-            <h1>This is images section</h1>
-            <p title="Just a tooltip" style="color:green">Natural image</p>
-            <img title="Image about natural" src="https://img.freepik.com/premium-photo/morning-serenity-dewkissed-moss-sprouts-soft-natural-light_1067911-7823.jpg?semt=ais_incoming&w=740&q=80">
-            <p style="color:red">Addiction.</p>
-            <img src="images/addiction.jpeg" alt="Addiction process" width="700" height="500">
-    </body>
+    <hr>
+        <h1>This is images section</h1>
+        <p title="Just a tooltip" style="color:green">Natural image</p>
+        <img title="Image about natural" src="https://img.freepik.com/premium-photo/morning-serenity-dewkissed-moss-sprouts-soft-natural-light_1067911-7823.jpg?semt=ais_incoming&w=740&q=80">
+        <p style="color:red">Addiction.</p>
+        <img src="images/addiction.jpeg" alt="Addiction process" width="700" height="500">
+  </body>
 </html>
