@@ -19,6 +19,65 @@
 
     <hr>
     <h1>Form section</h1>
+    <form action=""
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <fieldset>
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br>
+        <input type="submit">
+      </fieldset>
+    </form>
+    <form action="">
+      <fieldset>
+        <legend>Browser:</legend>
+        <label for="browser">Chose your browser:</label>
+        <input type="text" id="browser" list="browsers">
+        <datalist id="browsers">
+          <option value="Edge"></option>
+          <option value="Chrome"></option>
+          <option value="Firefox"></option>
+          <option value="Safari"></option>
+        </datalist>
+      </fieldset>
+    </form>
+    <form action="">
+      <fieldset>
+        <legend>Yourself:</legend>
+        <label for="yourself">Tell me about yourself:</label><br>
+        <textarea name="AboutYourself" id="yourself" style="width: 200px;height: 200px;"></textarea><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+    <br>
+    <form action="">
+      <label for="cars">Chose a car:</label>
+      <select name="cars" id="cars" size="1">
+        <optgroup label="Good car">
+          <option value="mayback">Mayback</option>
+          <option value="mercedes">Mercedes</option>
+        </optgroup>
+        <optgroup label="Bad car">
+          <option value="bmw" selected>BMW</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+      </select>
+    </form>
+    <br>
+    <form action="">
+      <label for="carsM">Chose a car:</label>
+      <select name="cars" id="carsM" size="1" multiple>
+        <option value="mayback">Mayback</option>
+        <option value="bmw" selected>BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </form>
     <form action="" target="_blank" method="get" autocomplete="off">
       <label for="fname">First name:</label><br>
       <input type="text" id="fname" name="fname" required><br>
@@ -47,7 +106,7 @@
     <form name="SensitiveForm" action="" target="_self" method="post" autocomplete="off">
       <label for="sensitiveData">A sensitive data:</label><br>
       <input type="text" id="sensitiveData" name="SensitiveData" required><br>
-      <input type="submit" name="Submit" style="margin-top: 10px;"> <br>
+      <input type="submit" name="Submit" value="Submit(will lead to error)" style="margin-top: 10px;"> <br>
     </form>
 
     <hr>
