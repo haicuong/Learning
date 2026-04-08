@@ -16,6 +16,33 @@
   <body>
     <h1 style="font-size:80px">This is a bigger header 1</h1>
     <h2>This is a header 2</h2>
+    
+    <hr>
+    <h1>Form attribute</h1>
+    <form action="" id="form1">
+        <label for="areYouIn">Are you in?</label>
+        <input type="text" id="areYouIn" name="areYouIn" required>
+    </form>
+
+    <input type="submit" formtarget="_blank" form="form1">
+
+    <hr>
+    <h1>Input attribute section</h1>
+    <label for="countryCode">Your country code:</label>
+    <input type="text" autofocus maxlength="3" size="3" pattern="[A-Za-z]{3}" title="Three letter only" id="countryCode" name="countryCode">
+    <br>
+    <label for="points">Points:</label>
+    <input type="number" id="points" name="Points" step="3" value="1">
+    <!-- Yeah step affected by value -->
+    <br>
+    <label for="areYouGay">Are you gay:</label>
+    <select name="areYouGay" id="areYouGay">
+        <option value="yes" selected>Yeah, I'm gay</option>
+        <option value="yes">Yes</option>
+        <option value="yes">Yes</option>
+        <option value="yes">Yeah, sure</option>
+        <option value="yes">Wow, Oh My Gót, hao đu du nô?</option>
+    </select>
 
     <hr>
     <h1>Input type section</h1>
