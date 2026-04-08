@@ -18,6 +18,66 @@
     <h2>This is a header 2</h2>
 
     <hr>
+    <h1>Input type section</h1>
+    <label for="pwd">Type password:</label>
+    <input type="password" id="pwd" name="Passwors"><br>
+    <label for="fav_color">Chose your favorite color:</label>
+    <input type="color" id="fav_color" name="FavoriteColor" value="#335588"><br>
+
+    <form>
+      <label for="birthday">Your birthday:</label>
+      <input type="date" id="birthday" name="Birthday" max="2026-04-08" min="1926-04-08">
+      <input type="submit">
+    </form>
+
+    <label for="dateLocal">Date and time local:</label>
+    <input type="datetime-local" id="dateLocal" name="DateTimeLocal"><br>
+
+    <form>
+      <label for="email">Input your email:</label>
+      <input type="email" id="email" name="email"><br>
+      <input type="image" src="images/car.jpg" alt="Submit" width="50" height="50">
+    </form>
+
+    <label for="file">Give me your pics >:)</label>
+    <input type="file" id="file"><br>
+    <input type="hidden" id="userStatusID" value="1">
+    <label for="birthdayMonth">Your birthday month:</label>
+    <input type="month" id="birthdayMonth" name="BirthdayMonth"><br>
+
+    <form>
+      <label type="number">Input your age to apply for Hoai Bao's girlfriend role:</label>
+      <input min="0" max="12" type="number" id="number">
+      <input type="submit">
+    </form>
+
+    <label for="numberDivisable">Number which divisable by 5:</label>
+    <input type="number" name="DivisablNumber" id="numberDivisable" step="5"><br>
+
+    <label for="range">Range(0-100):</label>
+    <input type="range" name="Range" id="range" step="0.01"><br>
+
+    <label for="search">Search for her💔</label>
+    <input type="search" name="Search" id="search"><br>
+    <br>
+    <label for="tel">Phone number:</label>
+    <input type="tel" name="Tel" id="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+    placeholder="0912-345-678"><br>
+    <small>Format: 0912-345-678</small><br>
+    <br>
+    <label for="time">Select a time:</label>
+    <input type="time" name="TIme" id="time"><br>
+    <br>
+    <form action="">
+    <label for="url">Your youtube channel link:</label>
+    <input type="url" name="URL" id="url">
+    <input type="submit">
+    </form>
+    <br>
+    <label for="week">Select a week:</label>
+    <input type="week" name="Week" id="week">
+
+    <hr>
     <h1>Form section</h1>
     <form action=""
     oninput="x.value=parseInt(a.value)+parseInt(b.value)">
