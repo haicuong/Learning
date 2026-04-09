@@ -1,0 +1,19 @@
+div {
+  border: 2px solid black;
+  max-width: 500px;
+  width: 200px;
+  background-color: aqua;
+}
+img {
+  max-width: 100%;
+}
+figure img+figcaption {
+  border: 2px solid black;
+}
+div h2~p {
+  color: blue;
+}
+.inlineP {
+  border: 2px solid black;
+  width: 400px;
+}
